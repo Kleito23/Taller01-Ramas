@@ -46,8 +46,8 @@ public class PrimaryController {
                 ex.printStackTrace();
             }
             Label lbT = new Label(c.getCantante() + " \n" + c.getTitulo());//titulo y cantante
-            lbT.setStyle("-fx-font-weight: bold;-fx-font-size: 14;");
-
+            lbT.setStyle("-fx-font-weight: bold;-fx-font-size: 14; -fx-text-fill: red;");
+            
             hb.getChildren().addAll(lbp, iv, lbT);//agregar al hbox
 
             hb.setOnMouseClicked(eh -> mostrarHistorial(c));//establecer el evento del click
